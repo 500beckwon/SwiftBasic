@@ -35,3 +35,30 @@ print("""
       """)
 
 
+var stackString = Stack<String>()
+stackString.push("First")
+stackString.push("Second")
+stackString.push("Third")
+stackString.pop()
+stackString.pop()
+
+if let peekItem = stackString.top() {
+    print("Top(Peek) Item(element) in Stack: \(peekItem)")
+}
+
+print(stackString)
+
+let ace = Student(name: "Ace", age: 15)
+let bea = Student(name: "Bea", age: 16)
+let john = Student(name: "John", age: 20)
+
+var stackStudent = Stack<Student>()
+stackStudent.push(ace)
+stackStudent.push(bea)
+stackStudent.push(john)
+
+print(stackStudent)
+
+stackStudent.pop()
+
+print(stackStudent)

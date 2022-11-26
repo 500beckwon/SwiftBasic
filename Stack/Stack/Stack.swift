@@ -47,6 +47,7 @@ struct Stack<T> {
     
     /// 삭제 0(1)
     /// removeLast()는 배열애 비어있을 때 사용하면 에러를 발생시키지만 popLast를 사용하면 nil을 반환한다
+    @discardableResult
     mutating func pop() -> T? {
         elements.popLast()
     }
@@ -58,4 +59,16 @@ struct Stack<T> {
     func top() -> T? {
         return elements.last
     }
+}
+
+extension Stack: CustomStringConvertible {
+    var description: String {
+        return "---- Stack ----\n" + elements.map { "\($0)" }.joined(separator: "\n") + "\n---- Stack End ----"
+    }
+}
+
+
+struct Student {
+    let name: String
+    let age: Int
 }
