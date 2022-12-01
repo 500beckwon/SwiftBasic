@@ -9,6 +9,8 @@ import Foundation
 
 print("Hello, World!")
 
+let urlString = "https://itunes.apple.com/search?media=music&entity=musicVideo&term=collier"
+let url = URL(string: urlString)
 
 
 enum HttpMethod<T: Codable> {
@@ -68,10 +70,64 @@ struct User: Codable {
 }
 
 let user = User(name: "500beckwon", age: 20)
-let req = URLRequest(url: URL(string: "")!, method: HttpMethod<User>.post(body: user))
+let req = URLRequest(url: url!, method: HttpMethod<User>.post(body: user))
 
 func requestJSON<T: Codable>(completion: @escaping(T?, Error?) -> Void)  {
     URLSession.shared.request(req, completion: completion)
     
 }
 
+print("""
+      urlString = \(urlString)
+      absoluteString = \(url!.absoluteURL)
+      scheme = \(url?.scheme)
+      path = \(url?.path)
+      query = \(url?.query)
+      """)
+
+let baseURL = URL(string: "https://itunes.apple.com")
+let relativeURL = URL(string: "search", relativeTo: baseURL)
+
+print("""
+      
+      relativeURL absoluteString = \(relativeURL!.absoluteURL)
+      baseURL = \(relativeURL?.baseURL)
+      path = \(relativeURL?.path)
+      """)
+
+var urlComponents = URLComponents(string: "https://itunes.apple.com/search?")!
+let mediaQuery = URLQueryItem(name: "media", value: "music")
+let entityQuery = URLQueryItem(name: "entity", value: "song")
+let termQuery = URLQueryItem(name: "term", value: "jacob collier")
+urlComponents.queryItems?.append(mediaQuery)
+urlComponents.queryItems?.append(entityQuery)
+urlComponents.queryItems?.append(termQuery)
+urlComponents.url?.scheme // "https"
+
+print("""
+      
+      urlComponents scheme = \(urlComponents.url?.scheme)
+      urlComponents.string = \(urlComponents.string)
+      urlComponents.queryItems = \(urlComponents.queryItems)
+      
+      """)
+
+let url3 = "https://github.500beckwon.com/login/oauth/authorize?client_id=1234&scope=repo%20gist%20user"
+let components = URLComponents(string: url3)
+let items = components?.queryItems ?? []
+
+for item in items{
+    print(item.name)
+    print(item.value)
+}
+
+
+let urlString2 = "https://github.500beckwon.com/login/oauth/authorize?client_id=1234&scope=repo%20gist%20user"
+let url2 = URL(string: urlString2)!
+
+print("url2.absoluteURL)", url2.absoluteURL)
+print("url2.scheme)", url2.scheme)
+print("url2.host)", url2.host)
+print("url2.path)", url2.path)
+print("url2.query)", url2.query)
+print("url2.baseURL)", url2.baseURL)
