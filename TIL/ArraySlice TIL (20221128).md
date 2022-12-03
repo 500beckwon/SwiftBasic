@@ -5,7 +5,7 @@
 - 참조하고 있는 상태이기 때문에 오랫동안 방치하게 되면 Memory Leak이 발생할 수 있다
 - 하나의 배열이 있을 때 반으로 나누어서 각 배열의 합을 비교하는 데에 사용할 수 있다
 
-```swfit
+```swift
 var intArray: [Int] = [1, 2, 3, 4, 5]
 var subIntArray = intArray[2...4] // [3, 4, 5]
 
