@@ -8,7 +8,7 @@
 import Foundation
 
 print("Hello, World!")
-
+Sequence
 let urlString = "https://itunes.apple.com/search?media=music&entity=musicVideo&term=collier"
 let url = URL(string: urlString)
 
