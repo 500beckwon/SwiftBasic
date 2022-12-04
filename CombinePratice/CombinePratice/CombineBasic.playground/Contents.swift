@@ -30,18 +30,17 @@ let subscriber = publisher.sink { result in
 }
 
 class TestSubscriber: Subscriber {
-    
-
-    typealias Input = Int
-    
+    typealias Input = String
     typealias Failure = Never
     
+    var subscription: Subscription?
     func receive(subscription: Subscription) {
         print("구독 시작")
         subscription.request(.max(1))
+        self.subscription = subscription
     }
     
-    func receive(_ input: Int) -> Subscribers.Demand {
+    func receive(_ input: String) -> Subscribers.Demand {
         print(input,"input")
         return .none
     }
@@ -51,8 +50,23 @@ class TestSubscriber: Subscriber {
     }
 }
 
-let testPublisher = [123123, 45645654, 3495834908].publisher
+let testPublisher = ["123123", "45645654", "3495834908"].publisher
 
 testPublisher.print().subscribe(TestSubscriber())
 
+let subject = PassthroughSubject<String, Never>()
 
+let subscriber2 = TestSubscriber()
+subject.print().subscribe(subscriber2)
+
+subject.send("Zedd")
+subject.send("Terror Jr")
+subject.send("Alan Walker")
+subject.send("Martin Garrix")
+subject.send("Don Diablo")
+
+subscriber2.subscription?.request(.max(2))
+subject.send(completion: .finished)
+subject.send("Avicii")
+subject.send("LANY")
+subject.send("Cash Cash")
