@@ -60,11 +60,22 @@
 - retain, release를 통해 referenceCount를 증감시키다가 count 가 0이 되면 deinit 을 통해 해제 시킨다
 - retain 증가, releases는 감소를 의미한다 
 
-9. 화면 이동에서 ModalPresentationStyle에서 Over가 붙은 키워드의 의미
+9. 탈출 클로저에 대해서 설명
+- @escaping 키워드를 붙여 사용하고 이를 사용하면 인자 값으로 전달된 클로저가 함수 종료 후에도 호출될 수 있도록 하는 것
+9-1. 탈출 클로저의 사용 이유
+- 비동기 작업으로 함수가 종료되고 난 후 호출할 필요가 있는 클로저를 사용해야 할 때 필요하다
+
+10. LayoutSubview에 대해서 설명
+- Layout을 변경하거나 그릴때 해당 메소드가 호출되며 반영한다 
+- UIView는 시스템에게 레이아웃이 변했다고 알려줄 수 있는데 View의 레이아웃이 다시 계산되는 시점에 특정한 작업을 실행 할 수 있게 제공하는 콜백 매서드
+10-1. UIView의 Layout 이란?
+- 사용자가 보는 화면에서 UIView의 크기와 위치를 의미한다
+ 
+11. 화면 이동에서 ModalPresentationStyle에서 Over가 붙은 키워드의 의미
 - Over가 붙으면 Presenting을 시키는 Controller의 계층이 사라지지 않고 계속 존재한다
 - WillDisAppear, DidDisAppear가 호출되지 않음
 - Over가 빠진 같은 키워는 계층이 사라짐, WillDisAppear, DidDisAppear이 호출됨
 
-10. AutoLayout 설정 시 Leading과 left의 차이점은?
+12. AutoLayout 설정 시 Leading과 left의 차이점은?
 - left는 말 그대로 무조건적인 왼쪽을 의미하고 Leading은 글자의 시작점(가장자리)를 의미한다 
 - Leading은 HIG에 맞춰서 글자를 오른쪽에서 왼쪽으로 읽는 국가 설정의 디바이스에서는 오른쪽으로 지정된다
