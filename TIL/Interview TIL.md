@@ -95,18 +95,50 @@
 - 같은 메모리 영역을 굥유한다
 - Stack은 높은 메모리 주소부터 할당 받고 Heap은 낮은 메모리 주소부터 할당 받는다
 - 둘다 가변적이다
+11-4.Value Type이 Heap에 할당되는 경우는 어떤게 있는가? 
+- Collection Type 할당 시 발생
+- 두 타입이 섞여있을 때(struct 안에 class를 선언)
+- Generic Type인 경우
+11-5.Reference Type이 Stack에 저장될 때는 어떤게 있는가?
+- final이 적용된 메서드
+12. enum / function / closure 각각 어떤 타입인가?
+- enum은 Value Type, function/ closure은 Reference Type
+12-1. closure이 왜 Reference Type 타입인가?
+- closure 값을 Capture하기 때문에
 
-12. LayoutSubview에 대해서 설명
+13. Array, Dictionary, Set 등등의 컬렉션 타입은 value type 인가 reference type 인가?
+- Value Type이면서 Reference Type이다 기본적으론 Value Type이지만 내부 구현상으론 두 타입이 섞여있다
+- Array를 복사할 때마다 많은 값을 다 복사하면 부담이 가기 때문에 CoW(Copy-on-Write)라는 방법을 쓰기 때문이다
+13-1 Cow?
+- 복사(새로운 할당)이 발생 할 때 원본이나 복사본이 수정되기 전까지는 복사를 하지 않고 Reference Type처럼 참조만 공유하고 수정이 발생할 때 그 때 복사하는 기술을 의미한다
+- 이 때문에 Collection Type은 Value Type이면서 Reference Type의 특징을 가지고 있다
+
+14. Swift에서 Optional은 어떻게 구성되어있는가?
+- Generic이 적용된 enum으로 some, none case로 구성 값이 없으면 none, 있으면 some(value)로  할당
+- !,? 로 표현이 가능하며 if let, guard switch let if case let 등으로 안전하게 추출이 가능하다
+
+15. dynamic에 대한 설명
+- Swift와 Objective-C와의 상호운용성(Interoperability)을 위해 사용하는 키워드
+- 선언 앞에 사용할 경우 @objc 속성이 암시적으로 표시된다.
+- class 맴버에만 사용할 수 있다
+
+16. LayoutSubview에 대해서 설명
 - Layout을 변경하거나 그릴때 해당 메소드가 호출되며 반영한다 
 - UIView는 시스템에게 레이아웃이 변했다고 알려줄 수 있는데 View의 레이아웃이 다시 계산되는 시점에 특정한 작업을 실행 할 수 있게 제공하는 콜백 매서드
-12-1. UIView의 Layout 이란?
+16-1. UIView의 Layout 이란?
 - 사용자가 보는 화면에서 UIView의 크기와 위치를 의미한다
  
-13. 화면 이동에서 ModalPresentationStyle에서 Over가 붙은 키워드의 의미
+17. 화면 이동에서 ModalPresentationStyle에서 Over가 붙은 키워드의 의미
 - Over가 붙으면 Presenting을 시키는 Controller의 계층이 사라지지 않고 계속 존재한다
 - WillDisAppear, DidDisAppear가 호출되지 않음
 - Over가 빠진 같은 키워는 계층이 사라짐, WillDisAppear, DidDisAppear이 호출됨
 
-14. AutoLayout 설정 시 Leading과 left의 차이점은?
+18. AutoLayout 설정 시 Leading과 left의 차이점은?
 - left는 말 그대로 무조건적인 왼쪽을 의미하고 Leading은 글자의 시작점(가장자리)를 의미한다 
 - Leading은 HIG에 맞춰서 글자를 오른쪽에서 왼쪽으로 읽는 국가 설정의 디바이스에서는 오른쪽으로 지정된다
+
+19. CoreData에 대하여 설명
+- Database가 아니고 프로그램의 모델 계층의 객체를 관리하는데 사용하는 Framework이자 객체의 라이프 사이클이나 영속성 관리를 위한 기능을 제공하는 객체 그래프 관리자 
+19-1. 객체 그래프, 객체 그래프 관리자?
+- 메모리에 객체들이 복잡한 관계로 엮여있는 것
+- 이 형태를 저장하는 관리자가 객채 그래프 관리자
