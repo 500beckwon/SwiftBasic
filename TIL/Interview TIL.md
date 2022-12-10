@@ -1,4 +1,4 @@
-# 면접 기록들
+ # 면접 기록들
 
 1. overriding과 overoading 이란?
 - overriding은 상위 클래스(super class)의 상속할 메소드, 프로퍼티 서브스크립트를 하위 클래스에서 원하는 대로 구현(재정의) 하는 것을 의미한다 override 키워드를 메소드 앞에 붙여서 선언하여 해당 문법을 사용할 수 있다
@@ -139,10 +139,13 @@
 - Sync는 전후의 작업과 연관성이 없다 즉 단일 작업의 특성을 지칭하는 것이고 앞뒤 작업과는 상관이 없다 단일작업들을 순차적으로 시킬지 말지 정하는 것을 Serial, Concurrent 라고 하는 것이다 Sync의 작업 후에 Async 작업이 들어올 수도 있는 것이다
 - Async는 해당 작업의 결과를 기다리지 않는 단일 작업들을 지칭하고 Concurrent는 Queue에 들어온 작업들을 동시다발적으로 실행한다는 개념이다 즉 한번에 여러 개의 Task를 실행시킬 수 있다
  
-16-3. UI를 왜 Main Thread에서 업데이트 하는가?(BackGround에서 UI를 제어할 수 없는 이유는?)
+16-4. UI를 왜 Main Thread에서 업데이트 하는가?(BackGround에서 UI를 제어할 수 없는 이유는?)
 - Thread-Safe하지 않은 애플의 의도로 설계되었고 UIKit의 속성을 Thread-Safe하게 설계하면 성능정하가 발생할 수 있기 때문에
 - View Drawing Cycle을 생각해보면 하나의 Runloop에서 이를 확인하고 관리하게 된다. 하지만 만약 각 스레드의 Runloop에서 View의 life cycle을 관리하게 되면 화면의 UI가 변경되었을 때 모든 변경사항을 화면에 존재하는 여러 View들이 확인할 수 없게 된다. 따라서 View가 깨질 것이다.
 - OS가 UI를 Draw하는 과정 즉 랜더링 프로세스가 발생하는 중에 여러 Thread에서 각자의 View 변경사항을 GPU로 보내면 각각의 정보를 해석해야 하기 떄문에 느려지거나 비효율적이 될 수 있기 떄문에
+16-5. DeadLock이란?
+- 교착상태, Queue에 등록된 Task들이 서로 끝나기만을 기다리는 무한 대기상태를 의미한다
+- MainThread를 Sync로 사용하였을 때나 하나의 큐 안에 sync로 작업을 호출 할 때 발생하는데 이 경우 서로의 작업이 끝나길 기다리는 상태에 빠지게 되기 때문에 데드락이 발생한다 
 
 17. LayoutSubview에 대해서 설명
 - Layout을 변경하거나 그릴때 해당 메소드가 호출되며 반영한다 
