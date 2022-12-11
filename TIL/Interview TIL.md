@@ -146,24 +146,29 @@
 16-5. DeadLock이란?
 - 교착상태, Queue에 등록된 Task들이 서로 끝나기만을 기다리는 무한 대기상태를 의미한다
 - MainThread를 Sync로 사용하였을 때나 하나의 큐 안에 sync로 작업을 호출 할 때 발생하는데 이 경우 서로의 작업이 끝나길 기다리는 상태에 빠지게 되기 때문에 데드락이 발생한다 
+17. MVVM에 대하여 설명하라
+- Model-View-ViewModel로 구성된 기존 MVC 패턴을 변형한 아키텍쳐 패턴이다
+- ViewModel은 View의 모형 즉 추상화된 View를 의미한다
+- Model이 제공하는 정보가 사용자에게 전달 될 때나 그 반대의 경우 해당 값을 ViewModel에서 적절하게 변환하여 View에 전달된다
+- ViewModel은 View의 UI 이밴트를 처리하고 Model을 업데이트한다. 업데이트 후 ViewModel에 결과를 알리고 View에 표시할 데이터를 준비한다
 
-17. LayoutSubview에 대해서 설명
+18. LayoutSubview에 대해서 설명
 - Layout을 변경하거나 그릴때 해당 메소드가 호출되며 반영한다 
 - UIView는 시스템에게 레이아웃이 변했다고 알려줄 수 있는데 View의 레이아웃이 다시 계산되는 시점에 특정한 작업을 실행 할 수 있게 제공하는 콜백 매서드
-17-1. UIView의 Layout 이란?
+18-1. UIView의 Layout 이란?
 - 사용자가 보는 화면에서 UIView의 크기와 위치를 의미한다
  
-18. 화면 이동에서 ModalPresentationStyle에서 Over가 붙은 키워드의 의미
+19. 화면 이동에서 ModalPresentationStyle에서 Over가 붙은 키워드의 의미
 - Over가 붙으면 Presenting을 시키는 Controller의 계층이 사라지지 않고 계속 존재한다
 - WillDisAppear, DidDisAppear가 호출되지 않음
 - Over가 빠진 같은 키워는 계층이 사라짐, WillDisAppear, DidDisAppear이 호출됨
 
-19. AutoLayout 설정 시 Leading과 left의 차이점은?
+20. AutoLayout 설정 시 Leading과 left의 차이점은?
 - left는 말 그대로 무조건적인 왼쪽을 의미하고 Leading은 글자의 시작점(가장자리)를 의미한다 
 - Leading은 HIG에 맞춰서 글자를 오른쪽에서 왼쪽으로 읽는 국가 설정의 디바이스에서는 오른쪽으로 지정된다
 
-20. CoreData에 대하여 설명
+21. CoreData에 대하여 설명
 - Database가 아니고 프로그램의 모델 계층의 객체를 관리하는데 사용하는 Framework이자 객체의 라이프 사이클이나 영속성 관리를 위한 기능을 제공하는 객체 그래프 관리자 
-20-1. 객체 그래프, 객체 그래프 관리자?
+21-1. 객체 그래프, 객체 그래프 관리자?
 - 메모리에 객체들이 복잡한 관계로 엮여있는 것
 - 이 형태를 저장하는 관리자가 객채 그래프 관리자
