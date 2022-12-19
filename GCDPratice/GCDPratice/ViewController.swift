@@ -13,10 +13,19 @@ class ViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        serialSync()
-        serialAsync()
-        concurrentSync()
-        concurrentAsync()
+//        serialSync()
+//        serialAsync()
+//        concurrentSync()
+//        concurrentAsync()
+               
+        semaphore()
+//        let concurrentQueue = DispatchQueue(label: "SodeulQueue")
+//        concurrentQueue.sync  { print("start") }
+//        concurrentQueue.async { for _ in 0...5 { print("async") }}
+//        concurrentQueue.sync  { for _ in 0...5 { print("sync") } }
+//        concurrentQueue.sync  { print("end") }
+//
+//        print("end")
     }
     
     func deadlockQueue() {
@@ -59,6 +68,44 @@ class ViewController: UIViewController {
             DispatchQueue.global().async {
                 print("concurrentAsync", index)
             }
+        }
+    }
+    
+    func semaphore() {
+        let queue = DispatchQueue(label: "Queue", attributes: .concurrent, target: .main)
+        let group = DispatchGroup()
+        var result: Int = 0
+
+        // 보통 리소스 풀을 관리할 때는 0보다 큰 값을 value 파라미터로 전달합니다.
+        // 여러 작업을 하나씩 순서대로 실행해야 한다면 1을 전달합니다.
+        let semaphore = DispatchSemaphore(value: 1)
+
+        queue.async(group: group) {
+            for _ in 1...1000 {
+                semaphore.wait() // 1 감소
+                result += 1
+                semaphore.signal() // 1 증가
+            }
+        }
+
+        queue.async(group: group) {
+            for _ in 1...1000 {
+                semaphore.wait()
+                result += 1
+                semaphore.signal()
+            }
+        }
+
+        queue.async(group: group) {
+            for _ in 1...1000 {
+                semaphore.wait()
+                result += 1
+                semaphore.signal()
+            }
+        }
+
+        group.notify(queue: DispatchQueue.main) {
+            print(result)
         }
     }
 }
