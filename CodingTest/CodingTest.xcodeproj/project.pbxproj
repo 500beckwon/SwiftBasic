@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		68424F00295078B8008DE096 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68424EFF295078B8008DE096 /* main.swift */; };
 		68424F07295078C6008DE096 /* Pratice01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68424F06295078C6008DE096 /* Pratice01.swift */; };
+		6857C0B82954722D00D4F4F2 /* Pratice03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857C0B72954722D00D4F4F2 /* Pratice03.swift */; };
+		6857C0BA2954744600D4F4F2 /* Pratice04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857C0B92954744600D4F4F2 /* Pratice04.swift */; };
 		686416772951B00C00F51B17 /* Pratice02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686416762951B00C00F51B17 /* Pratice02.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		68424EFC295078B8008DE096 /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68424EFF295078B8008DE096 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		68424F06295078C6008DE096 /* Pratice01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice01.swift; sourceTree = "<group>"; };
+		6857C0B72954722D00D4F4F2 /* Pratice03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice03.swift; sourceTree = "<group>"; };
+		6857C0B92954744600D4F4F2 /* Pratice04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice04.swift; sourceTree = "<group>"; };
 		686416762951B00C00F51B17 /* Pratice02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice02.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,8 @@
 				68424EFF295078B8008DE096 /* main.swift */,
 				68424F06295078C6008DE096 /* Pratice01.swift */,
 				686416762951B00C00F51B17 /* Pratice02.swift */,
+				6857C0B72954722D00D4F4F2 /* Pratice03.swift */,
+				6857C0B92954744600D4F4F2 /* Pratice04.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -127,6 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68424F00295078B8008DE096 /* main.swift in Sources */,
+				6857C0B82954722D00D4F4F2 /* Pratice03.swift in Sources */,
+				6857C0BA2954744600D4F4F2 /* Pratice04.swift in Sources */,
 				68424F07295078C6008DE096 /* Pratice01.swift in Sources */,
 				686416772951B00C00F51B17 /* Pratice02.swift in Sources */,
 			);
