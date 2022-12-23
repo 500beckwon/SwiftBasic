@@ -43,9 +43,25 @@
 - Schedulers는 Observable과 Observers 에게 그들이 실행되어야 할 스레드를 알려주는 구성요소로 observeOn() 메서드로 observers에게 관찰해야 할 스레드를 알려줄 수 있고, scheduleOn() 메서드로 observable이 실행해야 할 스레드를 알려줄 수 있다
 
 
+## RxSwift
+
+
+## RxCocoa 
+
+### Binder
+- Binder 는 UI Binding에서 사용되는 Observer
+- Binder로 새로운 값을 전달할수 있지만 Observable이 아니기 때문에 구독자를 추가하는 것은 불가능하다.
+- Binder은 Error Event를 따로 발생시키지 않는다.
+- 해당 요소는 UI를 업데이트하는 요소로서, 반드시 Main Thread에서 동작하게되는데 이 때 Error로 인해 동작이 멈추는것을 방지 해야 하기 때문이다
+- Binder는 Binding이 Main Thread에서만 실행됨을 보장한다.
+
+### ControlEvent
+
+
 ## 용어
 
 ### Data Stream(데이터 스트림)
 - 데이터의 흐름, 한 번의 읽기 또는 쓰기 동작으로 전송되는 정보
 - 한 장치에서 다른 장치로 보내지는 정보
 - 실 데이터가 열을 지어 차례대로 입력되는 것
+
