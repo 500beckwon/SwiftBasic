@@ -18,6 +18,18 @@ print(pratice03("3141592", "271"))
 print(pratice03("500220839878", "7"))
 print(pratice03("10203", "15"))
 
+ print(pratice04([[10, 7], [12, 3], [8, 15], [14, 7], [5, 15]]))
+ print(pratice05("one4seveneight"))
+ print(pratice05("23four5six7"))
+ print(pratice05("2three45sixseven"))
+ print(pratice05("123"))
+ 
 */
 
-print(pratice04([[10, 7], [12, 3], [8, 15], [14, 7], [5, 15]]))
+
+
+print(pratice06("...!@BaT#*..y.abcdefghijklm"))
+print(pratice06("z-+.^."))
+print(pratice06("=.="))
+print(pratice06("123_.def"))
+print(pratice06("abcdefghijklmn.p"))
