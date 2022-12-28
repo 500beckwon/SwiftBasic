@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680ED3DE295C56C0000D453B /* Pratice09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680ED3DD295C56C0000D453B /* Pratice09.swift */; };
 		6821CBCC295B046C0000B211 /* Pratice08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6821CBCB295B046C0000B211 /* Pratice08.swift */; };
 		683A35A92958608B005A09DA /* Pratice05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A35A82958608B005A09DA /* Pratice05.swift */; };
 		683A35AB29586581005A09DA /* Pratice06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A35AA29586581005A09DA /* Pratice06.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		680ED3DD295C56C0000D453B /* Pratice09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice09.swift; sourceTree = "<group>"; };
 		6821CBCB295B046C0000B211 /* Pratice08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice08.swift; sourceTree = "<group>"; };
 		683A35A82958608B005A09DA /* Pratice05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice05.swift; sourceTree = "<group>"; };
 		683A35AA29586581005A09DA /* Pratice06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice06.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				683A35AA29586581005A09DA /* Pratice06.swift */,
 				68716BD42959BF9600B0B043 /* Pratice07.swift */,
 				6821CBCB295B046C0000B211 /* Pratice08.swift */,
+				680ED3DD295C56C0000D453B /* Pratice09.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				683A35A92958608B005A09DA /* Pratice05.swift in Sources */,
 				6857C0B82954722D00D4F4F2 /* Pratice03.swift in Sources */,
 				6857C0BA2954744600D4F4F2 /* Pratice04.swift in Sources */,
+				680ED3DE295C56C0000D453B /* Pratice09.swift in Sources */,
 				68424F07295078C6008DE096 /* Pratice01.swift in Sources */,
 				683A35AB29586581005A09DA /* Pratice06.swift in Sources */,
 				686416772951B00C00F51B17 /* Pratice02.swift in Sources */,

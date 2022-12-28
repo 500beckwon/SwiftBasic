@@ -30,11 +30,14 @@ print(pratice03("10203", "15"))
  print(pratice06("123_.def"))
  print(pratice06("abcdefghijklmn.p"))
 
+ print(pratice07([1,3,2,5,4], 9))
+ print(pratice07([2,2,3,3], 10))
+ print(pratice07([1,1,1,1,1,1], 6))
+ print(pratice07([1,5,5,5,6,7,8], 40))
  
 */
 
 
-print(pratice07([1,3,2,5,4], 9))
-print(pratice07([2,2,3,3], 10))
-print(pratice07([1,1,1,1,1,1], 6))
-print(pratice07([1,5,5,5,6,7,8], 40))
+print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
+//print(pratice09(4, [4, 4, 4, 4, 4]))
+
