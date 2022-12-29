@@ -44,40 +44,17 @@ import Foundation
 
 
 // 도달하고 클리어하지 못한 명수/ 됴댤한 수
+
+// 답이 안나와서 모범답안 발췌
 func pratice09(_ N: Int, _ stages: [Int]) -> [Int] {
-    let zeros = (0..<stages.count).map { _ in 0 }
-    var dict = Dictionary(uniqueKeysWithValues: zip(1...N,zeros))
-    var clearDic = dict
-    
-   print(dict)
-    var _stages = stages
-    for stage in stages {
-        for i in 1...stage {
-            if i > N {
-                //dict[i - 1]! += 1
-            } else {
-                if i < stage {
-                    clearDic[i]! += 1
-                }
-                dict[i]! += 1
-                
-            }
-        }
+    var failDic = [Int:Double]()
+    for i in 1...N {
+        let stayCount = stages.filter{$0 >= i}.count
+        let clearCount = stayCount - stages.filter{$0 > i}.count
+        let failCount = Double(clearCount) / Double(stayCount)
+        
+        failDic[i] = failCount
     }
     
-    for i in 1..<clearDic.count {
-       // dict[i] = (clearDic[i] ?? 0) + 1
-    }
-    
-    let a1 = clearDic.sorted { $0.key < $1.key }
-    let a2 = dict.sorted { $0.key < $1.key }
-    print("clear",a1 , "\n", "stay", a2)
-    var test = [4:1, 1:0, 2:0, 3:0]
-    let a = test.sorted { s1, s2 in
-        if s1.value == s2.value {
-            return s1.key < s2.key
-        }
-        return s1.value > s2.value
-    }.map { $0.key }
-    return []
+    return failDic.sorted(by: <).sorted { $0.value > $1.value }.map { $0.key}
 }
