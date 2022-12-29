@@ -42,3 +42,8 @@ print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
 print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
 print(pratice09(4, [4, 4, 4, 4, 4]))
 
+
+for i in stride(from: 5, through: 0, by: -1) {
+      print(i)
+  }
+  

@@ -47,14 +47,36 @@ import Foundation
 
 // 답이 안나와서 모범답안 발췌
 func pratice09(_ N: Int, _ stages: [Int]) -> [Int] {
-    var failDic = [Int:Double]()
-    for i in 1...N {
-        let stayCount = stages.filter{$0 >= i}.count
-        let clearCount = stayCount - stages.filter{$0 > i}.count
-        let failCount = Double(clearCount) / Double(stayCount)
-        
-        failDic[i] = failCount
+    var clear = (0...N + 1).map { _ in 0 }
+    var stop =  clear
+    
+    for stage in stages {
+        stop[stage] += 1
+        clear[stage - 1] += 1
     }
     
-    return failDic.sorted(by: <).sorted { $0.value > $1.value }.map { $0.key}
+    
+    for i in stride(from: N, through: 0, by: -1) {
+           clear[i] += clear[i+1]
+       }
+    
+    return zip(clear[1...], stop[1...]).enumerated()
+        .map { index, value -> (Int, Double) in
+            let total = value.0 + value.1
+            
+            if total == 0 {
+                return (index+1, 0)
+            } else {
+                return (index+1, Double(value.1) / Double(total))
+            }
+        }
+        .dropLast()
+        .sorted {
+            if $0.1 == $1.1 {
+                return $0.0 < $1.0
+            } else {
+                return $0.1 > $1.1
+            }
+        }
+        .map { $0.0 }
 }
