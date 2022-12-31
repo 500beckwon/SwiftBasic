@@ -35,15 +35,24 @@ print(pratice03("10203", "15"))
  print(pratice07([1,1,1,1,1,1], 6))
  print(pratice07([1,5,5,5,6,7,8], 40))
  
+ print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
+ print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
+ print(pratice09(4, [4, 4, 4, 4, 4]))
 */
 
 
-print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
-print(pratice09(5, [2, 1, 2, 6, 2, 4, 3, 3]))
-print(pratice09(4, [4, 4, 4, 4, 4]))
+print(pratice10(1, 1), "\n")
+print(pratice10(1, 2), "\n")
+print(pratice10(1, 3), "\n")
+print(pratice10(1, 4), "\n")
+print(pratice10(1, 5), "\n")
+print(pratice10(1, 6), "\n")
+print(pratice10(1, 7), "\n")
+print(pratice10(1, 8), "\n")
+print(pratice10(1, 9), "\n")
+print(pratice10(1, 10), "\n")
+print(pratice10(1, 11), "\n")
 
-
-for i in stride(from: 5, through: 0, by: -1) {
-      print(i)
-  }
-  
+print(pratice10(1, 21), "\n")
+print(pratice10(1, 22), "\n")
+print(pratice10(1, 23), "\n")
