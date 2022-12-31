@@ -59,7 +59,7 @@ func pratice10(_ a:Int, _ b:Int) -> String {
 }
 
 /*
-배열 극한 활용
+배열 극한 활용 발췌
  func solution(_ a:Int, _ b:Int) -> String {
 
      let w = ["THU", "FRI", "SAT", "SUN", "MON", "TUE", "WED"]
