@@ -13,6 +13,7 @@
 		683A35AB29586581005A09DA /* Pratice06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A35AA29586581005A09DA /* Pratice06.swift */; };
 		68424F00295078B8008DE096 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68424EFF295078B8008DE096 /* main.swift */; };
 		68424F07295078C6008DE096 /* Pratice01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68424F06295078C6008DE096 /* Pratice01.swift */; };
+		68468B1229658BFB00E5054C /* Pratice11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68468B1129658BFB00E5054C /* Pratice11.swift */; };
 		6857C0B82954722D00D4F4F2 /* Pratice03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857C0B72954722D00D4F4F2 /* Pratice03.swift */; };
 		6857C0BA2954744600D4F4F2 /* Pratice04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857C0B92954744600D4F4F2 /* Pratice04.swift */; };
 		686416772951B00C00F51B17 /* Pratice02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686416762951B00C00F51B17 /* Pratice02.swift */; };
@@ -40,6 +41,7 @@
 		68424EFC295078B8008DE096 /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68424EFF295078B8008DE096 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		68424F06295078C6008DE096 /* Pratice01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice01.swift; sourceTree = "<group>"; };
+		68468B1129658BFB00E5054C /* Pratice11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice11.swift; sourceTree = "<group>"; };
 		6857C0B72954722D00D4F4F2 /* Pratice03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice03.swift; sourceTree = "<group>"; };
 		6857C0B92954744600D4F4F2 /* Pratice04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice04.swift; sourceTree = "<group>"; };
 		686416762951B00C00F51B17 /* Pratice02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice02.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				6821CBCB295B046C0000B211 /* Pratice08.swift */,
 				680ED3DD295C56C0000D453B /* Pratice09.swift */,
 				68999D9C296048C300E44334 /* Pratice10.swift */,
+				68468B1129658BFB00E5054C /* Pratice11.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				68716BD52959BF9600B0B043 /* Pratice07.swift in Sources */,
 				683A35A92958608B005A09DA /* Pratice05.swift in Sources */,
 				6857C0B82954722D00D4F4F2 /* Pratice03.swift in Sources */,
+				68468B1229658BFB00E5054C /* Pratice11.swift in Sources */,
 				6857C0BA2954744600D4F4F2 /* Pratice04.swift in Sources */,
 				680ED3DE295C56C0000D453B /* Pratice09.swift in Sources */,
 				68424F07295078C6008DE096 /* Pratice01.swift in Sources */,
