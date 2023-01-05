@@ -58,4 +58,8 @@ print(pratice03("10203", "15"))
 */
 
 
-print(pratice11([1,5,2,6,3,7,4], [[2,5,3], [4, 4, 1], [1, 7, 3]]))
+// print(pratice11([1,5,2,6,3,7,4], [[2,5,3], [4, 4, 1], [1, 7, 3]]))
+print(pratice12("AB", 1))
+print(pratice12("z", 1))
+print(pratice12("a B z", 4))
+print(pratice12("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", 4))
