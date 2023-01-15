@@ -55,11 +55,17 @@ print(pratice03("10203", "15"))
  print(pratice10(1, 22), "\n")
  print(pratice10(1, 23), "\n")
 
+ print(pratice11([1,5,2,6,3,7,4], [[2,5,3], [4, 4, 1], [1, 7, 3]]))
+
+ print(pratice12("AB", 1))
+ print(pratice12("z", 1))
+ print(pratice12("a B z", 4))
+ print(pratice12("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", 4))
+
+ 
 */
-
-
-// print(pratice11([1,5,2,6,3,7,4], [[2,5,3], [4, 4, 1], [1, 7, 3]]))
-print(pratice12("AB", 1))
-print(pratice12("z", 1))
-print(pratice12("a B z", 4))
-print(pratice12("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", 4))
+ 
+var list1 = [0, 1, 2, 2, 3, 0, 4, 2]
+var list2 = [3,2,2,3]
+print(removeElement( &list1, 2))
+print(removeElement( &list2, 3))
