@@ -115,3 +115,47 @@ class Car: FuelPumpDelegate {
 let car = Car()
 car.start()
 
+var containers: [StackContainer<Int>] = [
+    StackContainer(items: [])
+]
+
+containers[0].push(item: 1)
+containers[0].push(item: 2)
+containers[0].push(item: 3)
+
+print(containers)
+print(containers[0].count)
+
+
+var anyContainer: StackContainer<Any> = StackContainer(items: [])
+anyContainer.push(item: 1)
+anyContainer.push(item: "Hello")
+anyContainer.push(item: 12.5)
+
+print(anyContainer)
+if let item = anyContainer.pop() {
+    // item의 타입을 모른다.
+    // 그래서 아래와 같이 타입 캐스팅이 필요하다.
+    switch item {
+    case is Int:
+        print("Hi, I'm Int. and value is \(item)")
+    case is String:
+        print("Hi, I'm String. and value is \(item)")
+    case is Double:
+        print("Hi, I'm Double. and value is \(item)")
+    default:
+        print("I don't know what I am")
+    }
+}
+/*
+ var errorContainers = [
+ StackContainer<Int>(items: []),
+ StackContainer<Double>(items: [])
+ ]
+ */
+
+var dataCollection = [
+    CellModel<String>(),
+    CellModel<Int>()
+]
+
