@@ -19,6 +19,7 @@
 		6857C0B82954722D00D4F4F2 /* Pratice03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857C0B72954722D00D4F4F2 /* Pratice03.swift */; };
 		6857C0BA2954744600D4F4F2 /* Pratice04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857C0B92954744600D4F4F2 /* Pratice04.swift */; };
 		686416772951B00C00F51B17 /* Pratice02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686416762951B00C00F51B17 /* Pratice02.swift */; };
+		6870D27329753B8A008A2435 /* Pratice13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6870D27229753B8A008A2435 /* Pratice13.swift */; };
 		68716BD52959BF9600B0B043 /* Pratice07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68716BD42959BF9600B0B043 /* Pratice07.swift */; };
 		68999D9D296048C300E44334 /* Pratice10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68999D9C296048C300E44334 /* Pratice10.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		6857C0B72954722D00D4F4F2 /* Pratice03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice03.swift; sourceTree = "<group>"; };
 		6857C0B92954744600D4F4F2 /* Pratice04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice04.swift; sourceTree = "<group>"; };
 		686416762951B00C00F51B17 /* Pratice02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice02.swift; sourceTree = "<group>"; };
+		6870D27229753B8A008A2435 /* Pratice13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice13.swift; sourceTree = "<group>"; };
 		68716BD42959BF9600B0B043 /* Pratice07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice07.swift; sourceTree = "<group>"; };
 		68999D9C296048C300E44334 /* Pratice10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice10.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				68999D9C296048C300E44334 /* Pratice10.swift */,
 				68468B1129658BFB00E5054C /* Pratice11.swift */,
 				68443F162966D284001A8576 /* Pratice12.swift */,
+				6870D27229753B8A008A2435 /* Pratice13.swift */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6870D27329753B8A008A2435 /* Pratice13.swift in Sources */,
 				68424F00295078B8008DE096 /* main.swift in Sources */,
 				680B0DE42973EE79007207E0 /* LeetCode01.swift in Sources */,
 				68443F172966D284001A8576 /* Pratice12.swift in Sources */,
