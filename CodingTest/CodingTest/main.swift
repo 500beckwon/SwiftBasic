@@ -67,11 +67,50 @@ var list1 = [0, 1, 2, 2, 3, 0, 4, 2]
 var list2 = [3,2,2,3]
 print(removeElement( &list1, 2))
 print(removeElement( &list2, 3))
+ 
+ print(pratice13("2022.05.19", ["A 6", "B 12", "C 3"],  ["2021.05.02 A", "2021.07.01 B", "2022.02.19 C", "2022.02.20 C"]))
+
+ print(pratice13( "2020.01.01", ["Z 3", "D 5"], ["2019.01.01 D", "2019.11.15 Z", "2019.08.02 D", "2019.07.01 D", "2018.12.28 Z"] ))
+ print(pratice13( "2020.11.28",  ["A 12"] , ["2019.12.1 A"]))
+ print(pratice13("2022.02.28",  ["A 23"], ["2020.01.28 A"] ))
 */
 
 
-//print(pratice13("2022.05.19", ["A 6", "B 12", "C 3"],  ["2021.05.02 A", "2021.07.01 B", "2022.02.19 C", "2022.02.20 C"]))
+struct Test: Codable {
+    var own: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case own
+    }
+}
 
-//print(pratice13( "2020.01.01", ["Z 3", "D 5"], ["2019.01.01 D", "2019.11.15 Z", "2019.08.02 D", "2019.07.01 D", "2018.12.28 Z"] ))
-print(pratice13( "2020.11.28",  ["A 12"] , ["2019.12.1 A"]))
-print(pratice13("2022.02.28",  ["A 23"], ["2020.01.28 A"] ))
+extension Test {
+    init(from decoder: Decoder) throws {
+        let continer = try decoder.container(keyedBy: CodingKeys.self)
+        self.own = try continer.decode(Int.self, forKey: .own) == 1
+    }
+}
+
+let testBundle = Bundle.main
+
+enum JsonLoaderError: Error {
+    case unknownFile
+}
+let urlString = "/Users/500beckwon/SwiftWork/SwiftBasic/CodingTest/Resource.json"
+
+let filePath = testBundle.path(forResource: "Resource", ofType: "json")
+print(filePath)
+//guard let filePath = filePath else {
+//    throw JsonLoaderError.unknownFile
+//}
+let fileURL = URL(fileURLWithPath: urlString )
+print(fileURL)
+if let data = try? Data(contentsOf: fileURL) {
+    print(data)
+    let json = try? JSONDecoder().decode(Test.self, from: data)
+    print(json)
+}
+////
+////let data = try? Data(contentsOf: fileURL)
+////print(data)
+//

@@ -49,6 +49,7 @@
 		68468B1129658BFB00E5054C /* Pratice11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice11.swift; sourceTree = "<group>"; };
 		6857C0B72954722D00D4F4F2 /* Pratice03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice03.swift; sourceTree = "<group>"; };
 		6857C0B92954744600D4F4F2 /* Pratice04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice04.swift; sourceTree = "<group>"; };
+		685A8BC6297648BC00F02372 /* Resource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resource.json; sourceTree = "<group>"; };
 		686416762951B00C00F51B17 /* Pratice02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice02.swift; sourceTree = "<group>"; };
 		6870D27229753B8A008A2435 /* Pratice13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice13.swift; sourceTree = "<group>"; };
 		68716BD42959BF9600B0B043 /* Pratice07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice07.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		68424EF3295078B8008DE096 = {
 			isa = PBXGroup;
 			children = (
+				685A8BC6297648BC00F02372 /* Resource.json */,
 				68424EFE295078B8008DE096 /* CodingTest */,
 				68424EFD295078B8008DE096 /* Products */,
 			);
