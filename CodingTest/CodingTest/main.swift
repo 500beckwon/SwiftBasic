@@ -73,44 +73,16 @@ print(removeElement( &list2, 3))
  print(pratice13( "2020.01.01", ["Z 3", "D 5"], ["2019.01.01 D", "2019.11.15 Z", "2019.08.02 D", "2019.07.01 D", "2018.12.28 Z"] ))
  print(pratice13( "2020.11.28",  ["A 12"] , ["2019.12.1 A"]))
  print(pratice13("2022.02.28",  ["A 23"], ["2020.01.28 A"] ))
+ 
+ print(Pratice14("aabbaccc"))
+ print(Pratice14("ababcdcdababcdcd"))
+ print(Pratice14("abcabcdede"))
+ print(Pratice14("abcabcabcabcdededededede"))
+ print(Pratice14("xababcdcdababcdcd"))
 */
 
 
-struct Test: Codable {
-    var own: Bool
-    
-    enum CodingKeys: String, CodingKey {
-        case own
-    }
-}
+print(pratice15("(()())()" ))
+print(pratice15(")("))
+print(pratice15("()))((()"))
 
-extension Test {
-    init(from decoder: Decoder) throws {
-        let continer = try decoder.container(keyedBy: CodingKeys.self)
-        self.own = try continer.decode(Int.self, forKey: .own) == 1
-    }
-}
-
-let testBundle = Bundle.main
-
-enum JsonLoaderError: Error {
-    case unknownFile
-}
-let urlString = "/Users/500beckwon/SwiftWork/SwiftBasic/CodingTest/Resource.json"
-
-let filePath = testBundle.path(forResource: "Resource", ofType: "json")
-print(filePath)
-//guard let filePath = filePath else {
-//    throw JsonLoaderError.unknownFile
-//}
-let fileURL = URL(fileURLWithPath: urlString )
-print(fileURL)
-if let data = try? Data(contentsOf: fileURL) {
-    print(data)
-    let json = try? JSONDecoder().decode(Test.self, from: data)
-    print(json)
-}
-////
-////let data = try? Data(contentsOf: fileURL)
-////print(data)
-//
