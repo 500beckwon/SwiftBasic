@@ -10,6 +10,7 @@
 		680B0DE62973F92A007207E0 /* EraseWrapperPatten01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B0DE52973F92A007207E0 /* EraseWrapperPatten01.swift */; };
 		680B0DE82973FB59007207E0 /* EraseWrapperPatten02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B0DE72973FB59007207E0 /* EraseWrapperPatten02.swift */; };
 		680B0DEA2973FE61007207E0 /* EraseWrapperPatten03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B0DE92973FE61007207E0 /* EraseWrapperPatten03.swift */; };
+		680D860129793C7A00123FCC /* WhereSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D860029793C7A00123FCC /* WhereSelf.swift */; };
 		6870D26F29753109008A2435 /* EraseWrapperPatten04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6870D26E29753109008A2435 /* EraseWrapperPatten04.swift */; };
 		6870D27129753551008A2435 /* EraseWrapperPatten05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6870D27029753551008A2435 /* EraseWrapperPatten05.swift */; };
 		689B1F392930C17400B56C4E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B1F382930C17400B56C4E /* main.swift */; };
@@ -32,6 +33,7 @@
 		680B0DE52973F92A007207E0 /* EraseWrapperPatten01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseWrapperPatten01.swift; sourceTree = "<group>"; };
 		680B0DE72973FB59007207E0 /* EraseWrapperPatten02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseWrapperPatten02.swift; sourceTree = "<group>"; };
 		680B0DE92973FE61007207E0 /* EraseWrapperPatten03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseWrapperPatten03.swift; sourceTree = "<group>"; };
+		680D860029793C7A00123FCC /* WhereSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereSelf.swift; sourceTree = "<group>"; };
 		6870D26E29753109008A2435 /* EraseWrapperPatten04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseWrapperPatten04.swift; sourceTree = "<group>"; };
 		6870D27029753551008A2435 /* EraseWrapperPatten05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseWrapperPatten05.swift; sourceTree = "<group>"; };
 		689B1F352930C17400B56C4E /* Protocol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Protocol; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 			children = (
 				689B1F382930C17400B56C4E /* main.swift */,
 				689B1F3F2930C55100B56C4E /* Basic.swift */,
+				680D860029793C7A00123FCC /* WhereSelf.swift */,
 				680B0DE52973F92A007207E0 /* EraseWrapperPatten01.swift */,
 				680B0DE72973FB59007207E0 /* EraseWrapperPatten02.swift */,
 				680B0DE92973FE61007207E0 /* EraseWrapperPatten03.swift */,
@@ -145,6 +148,7 @@
 				6870D26F29753109008A2435 /* EraseWrapperPatten04.swift in Sources */,
 				6870D27129753551008A2435 /* EraseWrapperPatten05.swift in Sources */,
 				689B1F392930C17400B56C4E /* main.swift in Sources */,
+				680D860129793C7A00123FCC /* WhereSelf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

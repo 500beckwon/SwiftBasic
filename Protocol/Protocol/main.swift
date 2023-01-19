@@ -18,6 +18,14 @@ let trans2: While = Bicycle()
 trans2.hold()
 trans2.spin()
 
+let pClass = PClass()
+let cClass = TestWhereClass()
+
+
+pClass.textPrint(text: "hahaha")
+pClass.onlyPClassTest(text: "hahaha1")
+cClass.textPrint(text: "hahaha2")
+cClass.onlyPClassTest(text: "hhaha3")
 
 
 protocol A {
@@ -154,8 +162,4 @@ if let item = anyContainer.pop() {
  ]
  */
 
-var dataCollection = [
-    CellModel<String>(),
-    CellModel<Int>()
-]
 
