@@ -82,7 +82,8 @@ print(removeElement( &list2, 3))
 */
 
 
-print(pratice15("(()())()" ))
-print(pratice15(")("))
+//print(pratice15("(()())()" ))
+//print(pratice15(")("))
 print(pratice15("()))((()"))
+
 

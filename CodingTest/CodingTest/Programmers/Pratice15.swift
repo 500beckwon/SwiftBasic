@@ -71,12 +71,11 @@
  */
 
 import Foundation
-var d = 1
+
 func pratice15(_ p: String) -> String {
+    
     guard !p.isEmpty else { return "" }
-    d += 1
     let textList = p.map { String($0) }
-    print(d)
     var u = ""
     var v = ""
     var slice = ""
@@ -92,11 +91,11 @@ func pratice15(_ p: String) -> String {
         }
          if sliceLeft.count == sliceRight.count {
             u = slice
-             print(index, "dlseprtm", textList.count)
             v = textList[(index+1)...].reduce("", +)
+            break
         }
     }
-    print(u,v, slice, "ha")
+    print(u,"?", v, "??", p)
     var left = 0
     var right = 0
     var rightTextCheck = true
@@ -112,9 +111,9 @@ func pratice15(_ p: String) -> String {
             rightTextCheck = false
         }
     }
-    
+
     if rightTextCheck == true {
-        var uPlusSolV = u + pratice15(v)
+        let uPlusSolV = u + pratice15(v)
         return uPlusSolV
     }
     
@@ -124,10 +123,10 @@ func pratice15(_ p: String) -> String {
         
         tmpStr += pratice15(v)
         tmpStr += ")"
-        print(u)
-        var newU = u.map { String($0) }[1..<(u.count-1)].map { $0 }
+        print("!", tmpStr)
+        let newU = u.map { String($0) }[1..<(u.count-1)].map { $0 }
         var newU2 = ""
-        
+        print(newU)
         for index in 0..<newU.count {
             if newU[index] == "(" {
                 newU2 += ")"
@@ -135,6 +134,7 @@ func pratice15(_ p: String) -> String {
                 newU2 += "("
             }
         }
+        print("u2", newU2)
         tmpStr += newU2
         
         return tmpStr
