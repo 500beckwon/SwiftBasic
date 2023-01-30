@@ -79,13 +79,20 @@ print(removeElement( &list2, 3))
  print(Pratice14("abcabcdede"))
  print(Pratice14("abcabcabcabcdededededede"))
  print(Pratice14("xababcdcdababcdcd"))
+ 
+ print(pratice15("(()())()" ))
+ print(pratice15(")("))
+ print(pratice15("()))((()"))
+ 
+ print(searchInsert([1,3,5,6], 5))
+ print(searchInsert([1,3,5,6], 2))
+ print(searchInsert([1,3,5,6], 7))
+ print(searchInsert([1], 1))
 */
 
-
-//print(pratice15("(()())()" ))
-//print(pratice15(")("))
-//print(pratice15("()))((()"))
-print(searchInsert([1,3,5,6], 5))
-print(searchInsert([1,3,5,6], 2))
-print(searchInsert([1,3,5,6], 7))
-print(searchInsert([1], 1))
+let s1 = "A man, a plan, a canal: Panama"
+let s2 = "race a car"
+let s3 = "`l;`` 1o1 ??;l`"
+print(isPalindrome(s1))
+print(isPalindrome(s2))
+print(isPalindrome(s3))
