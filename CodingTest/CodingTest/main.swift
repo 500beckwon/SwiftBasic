@@ -88,7 +88,7 @@ print(removeElement( &list2, 3))
  print(searchInsert([1,3,5,6], 2))
  print(searchInsert([1,3,5,6], 7))
  print(searchInsert([1], 1))
-*/
+
 
 let s1 = "A man, a plan, a canal: Panama"
 let s2 = "race a car"
@@ -96,3 +96,14 @@ let s3 = "`l;`` 1o1 ??;l`"
 print(isPalindrome(s1))
 print(isPalindrome(s2))
 print(isPalindrome(s3))
+
+*/
+let logs1 = ["dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"]
+let logs2 = ["a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"]
+let logs3 = ["t kvr", "r 3 1", "i 403", "7 so", "t 54"]
+let logs4 = ["a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"]
+let logs5 = ["a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo","a2 act car"]
+let logs6 = ["j mo", "5 m w", "g 07", "o 2 0", "t q h"]
+print(reorderLogFiles(logs4))
+print(reorderLogFiles(logs5))
+print(reorderLogFiles(logs6))
