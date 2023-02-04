@@ -113,8 +113,16 @@ let killMe = "L, P! X! C; u! P? w! P. G, S? l? X? D. w? m? f? v, x? i. z; x' m! 
 
 let killYou = ["m","i","s","w","y","d","q","l","a","p","n","t","u","b","o","e","f","g","c","x"]
 print(mostCommonWord(killMe, killYou))
+ 
+ let sample1 = ["eat","tea","tan","ate","nat","bat"]
+ let sample2 = [""]
+ print(groupAnagrams(sample1))
+
+
+
+ 
 */
 
-let sample1 = ["eat","tea","tan","ate","nat","bat"]
-let sample2 = [""]
-print(groupAnagrams(sample1))
+//print(longestPalindrome("babad"))
+//print(longestPalindrome("cbbd"))
+print(longestPalindrome("a"))
