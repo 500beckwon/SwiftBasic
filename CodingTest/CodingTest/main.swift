@@ -118,11 +118,22 @@ print(mostCommonWord(killMe, killYou))
  let sample2 = [""]
  print(groupAnagrams(sample1))
 
-
+ print(longestPalindrome("babad"))
+ print(longestPalindrome("cbbd"))
+ print(longestPalindrome("a"))
 
  
 */
 
-//print(longestPalindrome("babad"))
-//print(longestPalindrome("cbbd"))
-print(longestPalindrome("a"))
+let sample1 = [2, 7, 11, 15]
+let target1 = 9
+
+let sample2 = [3, 2, 4]
+let target2 = 6
+
+let sample3 = [3, 3]
+let target3 = 6
+
+print(twoSum(sample1, target1))
+print(twoSum(sample2, target2))
+print(twoSum(sample3, target3))

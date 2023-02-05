@@ -7,6 +7,7 @@
 
 import Foundation
 
+/*
 func twoSum(_ num: [Int], _ target: Int) -> [Int] {
     for (index, first) in num.enumerated() {
         for second in (index+1)..<num.count {
@@ -14,6 +15,21 @@ func twoSum(_ num: [Int], _ target: Int) -> [Int] {
                 return [index, second]
             }
         }
+    }
+    return []
+}
+ */
+
+func twoSum(_ num: [Int], _ target: Int) -> [Int] {
+    var dictionary = [Int: Int]()
+    for (index, number) in num.enumerated() {
+        let value = target - number
+        
+        if let firstIndex = dictionary[value] {
+            return [firstIndex,index]
+        }
+      
+        dictionary[number] = index
     }
     return []
 }
