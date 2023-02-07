@@ -7,109 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6864F70A29715EE6002A9BBA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6864F70929715EE6002A9BBA /* SnapKit */; };
-		68E10B2B293CB23A00A60D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E10B2A293CB23A00A60D1D /* AppDelegate.swift */; };
-		68E10B2D293CB23A00A60D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E10B2C293CB23A00A60D1D /* SceneDelegate.swift */; };
-		68E10B2F293CB23A00A60D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E10B2E293CB23A00A60D1D /* ViewController.swift */; };
-		68E10B32293CB23A00A60D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E10B30293CB23A00A60D1D /* Main.storyboard */; };
-		68E10B34293CB23B00A60D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68E10B33293CB23B00A60D1D /* Assets.xcassets */; };
-		68E10B37293CB23B00A60D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E10B35293CB23B00A60D1D /* LaunchScreen.storyboard */; };
+		68347EA42992500800032ED8 /* ChatAI_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68347EA32992500800032ED8 /* ChatAI_ExampleApp.swift */; };
+		68347EA62992500800032ED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68347EA52992500800032ED8 /* ContentView.swift */; };
+		68347EA82992500A00032ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68347EA72992500900032ED8 /* Assets.xcassets */; };
+		68347EAB2992500A00032ED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68347EAA2992500A00032ED8 /* Preview Assets.xcassets */; };
+		68347EB32992508C00032ED8 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68347EB22992508C00032ED8 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		68E10B27293CB23A00A60D1D /* CombinePratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68E10B2A293CB23A00A60D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68E10B2C293CB23A00A60D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68E10B2E293CB23A00A60D1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68E10B31293CB23A00A60D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		68E10B33293CB23B00A60D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		68E10B36293CB23B00A60D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		68E10B38293CB23B00A60D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68E10B3E293CB30B00A60D1D /* CombineBasic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombineBasic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		68347EA02992500800032ED8 /* ChatAI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68347EA32992500800032ED8 /* ChatAI_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAI_ExampleApp.swift; sourceTree = "<group>"; };
+		68347EA52992500800032ED8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68347EA72992500900032ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68347EAA2992500A00032ED8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		68E10B24293CB23A00A60D1D /* Frameworks */ = {
+		68347E9D2992500800032ED8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6864F70A29715EE6002A9BBA /* SnapKit in Frameworks */,
+				68347EB32992508C00032ED8 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		68E10B1E293CB23A00A60D1D = {
+		68347E972992500800032ED8 = {
 			isa = PBXGroup;
 			children = (
-				68E10B29293CB23A00A60D1D /* CombinePratice */,
-				68E10B28293CB23A00A60D1D /* Products */,
+				68347EA22992500800032ED8 /* ChatAI_Example */,
+				68347EA12992500800032ED8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		68E10B28293CB23A00A60D1D /* Products */ = {
+		68347EA12992500800032ED8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68E10B27293CB23A00A60D1D /* CombinePratice.app */,
+				68347EA02992500800032ED8 /* ChatAI_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68E10B29293CB23A00A60D1D /* CombinePratice */ = {
+		68347EA22992500800032ED8 /* ChatAI_Example */ = {
 			isa = PBXGroup;
 			children = (
-				68E10B2A293CB23A00A60D1D /* AppDelegate.swift */,
-				68E10B2C293CB23A00A60D1D /* SceneDelegate.swift */,
-				68E10B2E293CB23A00A60D1D /* ViewController.swift */,
-				68E10B30293CB23A00A60D1D /* Main.storyboard */,
-				68E10B33293CB23B00A60D1D /* Assets.xcassets */,
-				68E10B35293CB23B00A60D1D /* LaunchScreen.storyboard */,
-				68E10B38293CB23B00A60D1D /* Info.plist */,
-				68E10B3E293CB30B00A60D1D /* CombineBasic.playground */,
+				68347EA32992500800032ED8 /* ChatAI_ExampleApp.swift */,
+				68347EA52992500800032ED8 /* ContentView.swift */,
+				68347EA72992500900032ED8 /* Assets.xcassets */,
+				68347EA92992500A00032ED8 /* Preview Content */,
 			);
-			path = CombinePratice;
+			path = ChatAI_Example;
+			sourceTree = "<group>";
+		};
+		68347EA92992500A00032ED8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68347EAA2992500A00032ED8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		68E10B26293CB23A00A60D1D /* CombinePratice */ = {
+		68347E9F2992500800032ED8 /* ChatAI_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68E10B3B293CB23B00A60D1D /* Build configuration list for PBXNativeTarget "CombinePratice" */;
+			buildConfigurationList = 68347EAE2992500A00032ED8 /* Build configuration list for PBXNativeTarget "ChatAI_Example" */;
 			buildPhases = (
-				68E10B23293CB23A00A60D1D /* Sources */,
-				68E10B24293CB23A00A60D1D /* Frameworks */,
-				68E10B25293CB23A00A60D1D /* Resources */,
+				68347E9C2992500800032ED8 /* Sources */,
+				68347E9D2992500800032ED8 /* Frameworks */,
+				68347E9E2992500800032ED8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CombinePratice;
+			name = ChatAI_Example;
 			packageProductDependencies = (
-				6864F70929715EE6002A9BBA /* SnapKit */,
+				68347EB22992508C00032ED8 /* OpenAISwift */,
 			);
-			productName = CombinePratice;
-			productReference = 68E10B27293CB23A00A60D1D /* CombinePratice.app */;
+			productName = ChatAI_Example;
+			productReference = 68347EA02992500800032ED8 /* ChatAI_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		68E10B1F293CB23A00A60D1D /* Project object */ = {
+		68347E982992500800032ED8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					68E10B26293CB23A00A60D1D = {
+					68347E9F2992500800032ED8 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 68E10B22293CB23A00A60D1D /* Build configuration list for PBXProject "CombinePratice" */;
+			buildConfigurationList = 68347E9B2992500800032ED8 /* Build configuration list for PBXProject "ChatAI_Example" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,66 +115,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 68E10B1E293CB23A00A60D1D;
+			mainGroup = 68347E972992500800032ED8;
 			packageReferences = (
-				6864F70829715EE6002A9BBA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				68347EB12992508C00032ED8 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
-			productRefGroup = 68E10B28293CB23A00A60D1D /* Products */;
+			productRefGroup = 68347EA12992500800032ED8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				68E10B26293CB23A00A60D1D /* CombinePratice */,
+				68347E9F2992500800032ED8 /* ChatAI_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		68E10B25293CB23A00A60D1D /* Resources */ = {
+		68347E9E2992500800032ED8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E10B37293CB23B00A60D1D /* LaunchScreen.storyboard in Resources */,
-				68E10B34293CB23B00A60D1D /* Assets.xcassets in Resources */,
-				68E10B32293CB23A00A60D1D /* Main.storyboard in Resources */,
+				68347EAB2992500A00032ED8 /* Preview Assets.xcassets in Resources */,
+				68347EA82992500A00032ED8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		68E10B23293CB23A00A60D1D /* Sources */ = {
+		68347E9C2992500800032ED8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E10B2F293CB23A00A60D1D /* ViewController.swift in Sources */,
-				68E10B2B293CB23A00A60D1D /* AppDelegate.swift in Sources */,
-				68E10B2D293CB23A00A60D1D /* SceneDelegate.swift in Sources */,
+				68347EA62992500800032ED8 /* ContentView.swift in Sources */,
+				68347EA42992500800032ED8 /* ChatAI_ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		68E10B30293CB23A00A60D1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68E10B31293CB23A00A60D1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		68E10B35293CB23B00A60D1D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68E10B36293CB23B00A60D1D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		68E10B39293CB23B00A60D1D /* Debug */ = {
+		68347EAC2992500A00032ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		68E10B3A293CB23B00A60D1D /* Release */ = {
+		68347EAD2992500A00032ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,19 +267,20 @@
 			};
 			name = Release;
 		};
-		68E10B3C293CB23B00A60D1D /* Debug */ = {
+		68347EAF2992500A00032ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChatAI_Example/Preview Content\"";
 				DEVELOPMENT_TEAM = X2WF6FR3RY;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CombinePratice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +288,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ann.beckwon.CombinePratice;
+				PRODUCT_BUNDLE_IDENTIFIER = "ann.beckwon.ChatAI-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,19 +296,20 @@
 			};
 			name = Debug;
 		};
-		68E10B3D293CB23B00A60D1D /* Release */ = {
+		68347EB02992500A00032ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChatAI_Example/Preview Content\"";
 				DEVELOPMENT_TEAM = X2WF6FR3RY;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CombinePratice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ann.beckwon.CombinePratice;
+				PRODUCT_BUNDLE_IDENTIFIER = "ann.beckwon.ChatAI-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,20 +328,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68E10B22293CB23A00A60D1D /* Build configuration list for PBXProject "CombinePratice" */ = {
+		68347E9B2992500800032ED8 /* Build configuration list for PBXProject "ChatAI_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68E10B39293CB23B00A60D1D /* Debug */,
-				68E10B3A293CB23B00A60D1D /* Release */,
+				68347EAC2992500A00032ED8 /* Debug */,
+				68347EAD2992500A00032ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68E10B3B293CB23B00A60D1D /* Build configuration list for PBXNativeTarget "CombinePratice" */ = {
+		68347EAE2992500A00032ED8 /* Build configuration list for PBXNativeTarget "ChatAI_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68E10B3C293CB23B00A60D1D /* Debug */,
-				68E10B3D293CB23B00A60D1D /* Release */,
+				68347EAF2992500A00032ED8 /* Debug */,
+				68347EB02992500A00032ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -370,23 +349,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6864F70829715EE6002A9BBA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		68347EB12992508C00032ED8 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6864F70929715EE6002A9BBA /* SnapKit */ = {
+		68347EB22992508C00032ED8 /* OpenAISwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6864F70829715EE6002A9BBA /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
+			package = 68347EB12992508C00032ED8 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 68E10B1F293CB23A00A60D1D /* Project object */;
+	rootObject = 68347E982992500800032ED8 /* Project object */;
 }
