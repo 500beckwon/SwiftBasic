@@ -123,7 +123,7 @@ print(mostCommonWord(killMe, killYou))
  print(longestPalindrome("a"))
 
  
-*/
+
 
 let sample1 = [2, 7, 11, 15]
 let target1 = 9
@@ -137,3 +137,13 @@ let target3 = 6
 print(twoSum(sample1, target1))
 print(twoSum(sample2, target2))
 print(twoSum(sample3, target3))
+
+ */
+
+let input1 = [0,1,0,2,1,0,1,3,2,1,2,1] // 6
+let input2 = [4,2,0,3,2,5] // 9
+
+//print(trappingRainWater3(input1))
+//print(trappingRainWater3(input2))
+print(trappingRainWater2(input1))
+//print(trappingRainWater2(input2))
