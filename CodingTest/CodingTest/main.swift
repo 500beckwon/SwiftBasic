@@ -138,12 +138,20 @@ print(twoSum(sample1, target1))
 print(twoSum(sample2, target2))
 print(twoSum(sample3, target3))
 
+ let input1 = [0,1,0,2,1,0,1,3,2,1,2,1] // 6
+ let input2 = [4,2,0,3,2,5] // 9
+
+ print(trappingRainWater3(input1))
+ print(trappingRainWater3(input2))
+ print(trappingRainWater2(input1))
+ print(trappingRainWater3(input2))
+ 
  */
 
-let input1 = [0,1,0,2,1,0,1,3,2,1,2,1] // 6
-let input2 = [4,2,0,3,2,5] // 9
+let input1 = [-1,0,1,2,-1,-4]
+let input2 = [0,1,1]
+let input3 = [0,0,0]
 
-//print(trappingRainWater3(input1))
-//print(trappingRainWater3(input2))
-print(trappingRainWater2(input1))
-//print(trappingRainWater2(input2))
+print(threeSum(input1))
+print(threeSum(input2))
+print(threeSum(input3))

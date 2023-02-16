@@ -74,11 +74,16 @@ func trappingRainWater2(_ height: [Int]) -> Int {
     var maxLeft = height[left]
     var maxRight = height[right]
     var res = 0
-    
+    print("height = \(height)")
     while left < right {
+        print("left = \(left)", "right = \(right)", separator: "\n")
+        print("maxLeft = \(maxLeft)", "maxRight = \(maxRight)", separator: "\n")
+        print("res = \(res)")
+        print("\n")
         if maxLeft <= maxRight {
             left += 1
             maxLeft = max(maxLeft, height[left])
+            
             res += maxLeft - height[left]
         } else {
             right -= 1
@@ -97,13 +102,27 @@ func trappingRainWater3(_ height: [Int]) -> Int {
     
     for i in height.indices {
         let hidx = height[i]
+        print("체크1", i)
         
+        /*
+         while문이 지속되는 조건 (3가지가 충족되어야함)
+         1. stack이 비어 있지 않아야 한다
+         2. stack last가 존재해야 한다
+         3. 스택 라스트값을 height에 인댁싱하여 얻은 값이 hidx 상수보다 작아야 한다
+         */
+        if let stackLast = stack.last {
+            print(hidx, height[stackLast], "ㅗ몸")
+        }
         while !(stack.isEmpty), let last = stack.last, hidx > height[last] {
+            print(i, "체크2")
             let top = stack.removeLast()
+            print("스택 빔 유무", stack.isEmpty)
             if !(stack.isEmpty), let last = stack.last {
+                print(hidx, height[last],  height[top])
                 let diff = min(hidx, height[last]) - height[top]
                 result += (i - last - 1) * diff
             } else {
+                
                 break
             }
         }
