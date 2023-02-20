@@ -146,12 +146,30 @@ print(twoSum(sample3, target3))
  print(trappingRainWater2(input1))
  print(trappingRainWater3(input2))
  
+ let input1 = [-1,0,1,2,-1,-4]
+ let input2 = [0,1,1]
+ let input3 = [0,0,0]
+
+ print(threeSum(input1))
+ print(threeSum(input2))
+ print(threeSum(input3))
+ 
+ var nums1 = [1,4,3,2]
+ var nums2 = [6,2,6,5,1,2]
+ print(arrayPairSum(nums1))
+ print(arrayPairSum(nums2))
+ 
+ var nums1 = [1,2,3,4]
+ var nums2 = [-1,1,0,-3,3]
+
+ print(productExceptSelf(nums1))
+ print(productExceptSelf(nums2))
+
+ 
  */
 
-let input1 = [-1,0,1,2,-1,-4]
-let input2 = [0,1,1]
-let input3 = [0,0,0]
+var prices1 = [7,1,5,3,6,4]
+var prices2 = [7,6,4,3,1]
 
-print(threeSum(input1))
-print(threeSum(input2))
-print(threeSum(input3))
+print(maxProfit(prices1))
+print(maxProfit(prices2))
