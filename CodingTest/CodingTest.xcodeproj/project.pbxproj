@@ -37,6 +37,7 @@
 		6896903C2977F78B00DF5B78 /* Pratice15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6896903B2977F78B00DF5B78 /* Pratice15.swift */; };
 		68999D9D296048C300E44334 /* Pratice10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68999D9C296048C300E44334 /* Pratice10.swift */; };
 		689E25C729A3913B0050D43B /* LeetCode14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E25C629A3913B0050D43B /* LeetCode14.swift */; };
+		68B2C6FD29A6327F0038ECDA /* LeetCode15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C6FC29A6327F0038ECDA /* LeetCode15.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +84,7 @@
 		6896903B2977F78B00DF5B78 /* Pratice15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice15.swift; sourceTree = "<group>"; };
 		68999D9C296048C300E44334 /* Pratice10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratice10.swift; sourceTree = "<group>"; };
 		689E25C629A3913B0050D43B /* LeetCode14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode14.swift; sourceTree = "<group>"; };
+		68B2C6FC29A6327F0038ECDA /* LeetCode15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode15.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				687A430329A21199000443DA /* LeetCode12.swift */,
 				687A430529A215B7000443DA /* LeetCode13.swift */,
 				689E25C629A3913B0050D43B /* LeetCode14.swift */,
+				68B2C6FC29A6327F0038ECDA /* LeetCode15.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				686416772951B00C00F51B17 /* Pratice02.swift in Sources */,
 				68999D9D296048C300E44334 /* Pratice10.swift in Sources */,
 				683371C8298BD915006CBD3D /* LeetCode07.swift in Sources */,
+				68B2C6FD29A6327F0038ECDA /* LeetCode15.swift in Sources */,
 				6821CBCC295B046C0000B211 /* Pratice08.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
