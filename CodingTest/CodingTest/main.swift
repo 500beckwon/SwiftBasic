@@ -164,12 +164,14 @@ print(twoSum(sample3, target3))
 
  print(productExceptSelf(nums1))
  print(productExceptSelf(nums2))
+ var prices1 = [7,1,5,3,6,4]
+ var prices2 = [7,6,4,3,1]
 
+ print(maxProfit(prices1))
+ print(maxProfit(prices2))
  
  */
 
-var prices1 = [7,1,5,3,6,4]
-var prices2 = [7,6,4,3,1]
 
-print(maxProfit(prices1))
-print(maxProfit(prices2))
+
+print(isPalindrome(.sample))
