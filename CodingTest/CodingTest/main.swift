@@ -170,10 +170,17 @@ print(twoSum(sample3, target3))
  print(maxProfit(prices1))
  print(maxProfit(prices2))
  print(isPalindrome(.sample))
+ 
+ 
+ print(nodeSample)
+
+ print(reverseList(nodeSample))
+ 
  */
 
-print(nodeSample)
-print(reverseList(nodeSample))
+
+print(addTwoNumbers(addTwoNumbersSample1, addTwoNumbersSample2))
+
 
 
 
