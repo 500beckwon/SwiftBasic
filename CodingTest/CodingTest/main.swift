@@ -175,11 +175,19 @@ print(twoSum(sample3, target3))
  print(nodeSample)
 
  print(reverseList(nodeSample))
+ print(addTwoNumbers(addTwoNumbersSample1, addTwoNumbersSample2))
+
  
+ let sampleNode = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
+ print(swapNodesInPairs(sampleNode)?.val)
+ 
+
+ print(OddEvenLinkedList(sampleNode)?.val)
+
  */
+let sampleNode = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
 
-
-print(addTwoNumbers(addTwoNumbersSample1, addTwoNumbersSample2))
+print(reverseBetween(sampleNode, 2, 3))
 
 
 
