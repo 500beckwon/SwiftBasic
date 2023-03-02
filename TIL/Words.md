@@ -7,11 +7,27 @@
 
 ## Architecture
 
+## Components
+- 여러 개의 프로그램 함수들을 모아 하나의 특정한 기능을 수행할 수 있도록 구성한 작은 기능적 단위를 말한다
+- 프로그램의 한 부분을 의미하며 재사용이 가능한 최소 단위를 말한다.
+
+
+## Util
+- 보통 Util 클래스는 문자열 관련, 랜덤값 생성, 날짜 및 시간 처리 등 프로젝트 전역에서 사용되는 특정 로직이나 독립적인 기능을 구현해둔 클래스/패키지
+- 프로젝트 전역에서 사용될 수도 있는 기능, 특정 로직이나 독립적인 기능, 가능하면 어떤 상태를 가지지 않는 기능
+- Util 패키지는 보통은 Model, View, Controller와 같은 특정 계층에 있지 않고 어디서든 사용할 수 있다.
+
+## UseCase
+
+## 디자인 패턴
+
+## Model
+
 ## Entities
 
 ## storage
 
-## 동적과 정적의 개념
+## 개발에서 '동적', '정적' 단어
 
 ## REST, RESTful, REST
 
@@ -19,3 +35,17 @@
 
 ## JWToken
 
+## 소켓
+
+## 라우터(Router)
+
+## Presenter
+
+## Interactor
+
+## 비즈니스 로직(Business Logic)
+
+## Sut, Stub, Test Double
+
+## DTO
+- DTO는 Data Transfor Object(데이터 전송 객체), 데이터 전송을 위해 생성되는 객체를 의미한다
