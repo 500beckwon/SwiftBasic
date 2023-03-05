@@ -184,12 +184,16 @@ print(twoSum(sample3, target3))
 
  print(OddEvenLinkedList(sampleNode)?.val)
 
+ let sampleNode = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
+
+ print(reverseBetween(sampleNode, 2, 3))
+
+ 
  */
-let sampleNode = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
-
-print(reverseBetween(sampleNode, 2, 3))
 
 
-
+print(isValid("()"))
+//print(isValid("()[]{}"))
+//print(isValid("(]"))
 
 
