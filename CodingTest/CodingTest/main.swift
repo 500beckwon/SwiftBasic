@@ -192,11 +192,17 @@ print(twoSum(sample3, target3))
  //print(isValid("(]"))
 
  
+ print(removeDuplicateLetters("bcabc"))
+ //print(removeDuplicateLetters("cbacdcbc"))
+ 
+ 
+ 
  */
 
-
-
-print(removeDuplicateLetters("bcabc"))
-//print(removeDuplicateLetters("cbacdcbc"))
-
-
+let temperatures1 = [73,74,75,71,69,72,76,73]
+let temperatures2 = [30,40,50,60]
+let temperatures3 = [30,60,90]
+let temperatures4 = [99,99,99]
+print(dailyTemperatures(temperatures1))
+print(dailyTemperatures(temperatures2))
+print(dailyTemperatures(temperatures3))
