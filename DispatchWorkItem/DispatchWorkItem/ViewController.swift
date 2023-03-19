@@ -14,6 +14,20 @@ class ViewController: UIViewController {
         // practice2()
         // practice3()
         // practice4()
+        //workNestClosureItemExampleTest()
+        workDispatchQueueItemExampleTest()
+    }
+    
+    func workNestClosureItemExampleTest() {
+        let object = APIExample()
+        
+        object.nestedClosureWork()
+    }
+    
+    func workDispatchQueueItemExampleTest() {
+        let object = APIExample()
+        
+        object.dispatchWorkGroup()
     }
 
     
