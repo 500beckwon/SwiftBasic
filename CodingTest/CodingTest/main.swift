@@ -203,19 +203,31 @@ print(twoSum(sample3, target3))
  print(dailyTemperatures(temperatures1))
  print(dailyTemperatures(temperatures2))
  print(dailyTemperatures(temperatures3))
- 
+ let myQueue = MyQueue()
+
+ myQueue.push(1)
+ myQueue.push(2)
+ print(myQueue.peek())
+ myQueue.push(3)
+ _ = myQueue.pop()
+ print(myQueue.input, myQueue.output)
+ print(myQueue.peek())
+ print(myQueue.empty())
+
  */
 
-let myQueue = MyQueue()
-
-myQueue.push(1)
-myQueue.push(2)
-print(myQueue.peek())
-myQueue.push(3)
-_ = myQueue.pop()
-print(myQueue.input, myQueue.output)
-print(myQueue.peek())
-print(myQueue.empty())
 
 
+let circularQueue = MyCircularQueue(2)
 
+print(circularQueue.enQueue(4))
+print(circularQueue.rear())
+print(circularQueue.enQueue(9))
+print(circularQueue.deQueue())
+print(circularQueue.front())
+print(circularQueue.deQueue())
+print(circularQueue.deQueue())
+print(circularQueue.isEmpty())
+print(circularQueue.deQueue())
+print(circularQueue.enQueue(6))
+print(circularQueue.enQueue(4))
