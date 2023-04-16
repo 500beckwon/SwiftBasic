@@ -6,7 +6,7 @@
 - [Stack](https://github.com/500beckwon/SwiftBasic/tree/master/Stack)
 - [Queue](https://github.com/500beckwon/SwiftBasic/tree/master/Queue)
 - [Heap](https://github.com/500beckwon/SwiftBasic/tree/master/Heap)
-- [LinkedList]((https://github.com/500beckwon/SwiftBasic/tree/master/LinkList))
+- [LinkedList](https://github.com/500beckwon/SwiftBasic/tree/master/LinkList)
 
 <br>
 
