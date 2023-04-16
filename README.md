@@ -1,25 +1,46 @@
 # 500beckwon 개인 공부용 REPO
-## 구성
-1. CS
-2. 자료구조
-3. 문법 기초 및 심화
-5. Swift 기본 API
-6. UI 기초 및 심화 
-7. 기타
 
+## 목차
 
-## 학습 예정 콘텐츠
-1. class type, static type 
-2. vTable(Virtual Dispatch Table)
-3. 명목상 타입과 실제 타입의 차이
-4. Generic, associatedType
-5. Memory Leak 관찰
-6. URLSession
-7. PHAsset
-8. CGAffineTransform
-9. dynamic keyword
-10. 일급 객체
-11. Closure
+### Data Structure(자료구조)
+- [Stack](https://github.com/500beckwon/SwiftBasic/tree/master/Stack)
+- [Queue](https://github.com/500beckwon/SwiftBasic/tree/master/Queue)
+- [Heap](https://github.com/500beckwon/SwiftBasic/tree/master/Heap)
+- [LinkedList]((https://github.com/500beckwon/SwiftBasic/tree/master/LinkList))
+
+<br>
+
+### Coding Test(코딩테스트 문제 풀이)
+- [CodingTest](https://github.com/500beckwon/SwiftBasic/tree/master/CodingTest)
+
+<br>
+
+### Swift Grammar
+- [Access Control](https://github.com/500beckwon/SwiftBasic/tree/master/AccesControl)
+- [ArraySlice](https://github.com/500beckwon/SwiftBasic/tree/master/ArraySlice)
+- [KeyPath](https://github.com/500beckwon/SwiftBasic/tree/master/KeyPath)
+- [TypeAlias](https://github.com/500beckwon/SwiftBasic/tree/master/TypeAlias)
+- [TypeMethod](https://github.com/500beckwon/SwiftBasic/tree/master/TypeMethod)
+- [Variadic](https://github.com/500beckwon/SwiftBasic/tree/master/Varidic)
+- [protocol](https://github.com/500beckwon/SwiftBasic/tree/master/protocol) 
+- [Subscript](https://github.com/500beckwon/SwiftBasic/tree/master/Subscript)
+
+<br>
+
+### Swift Intensify
+- [GCD](https://github.com/500beckwon/SwiftBasic/tree/master/GCD)
+- [URLSession](https://github.com/500beckwon/SwiftBasic/tree/master/URLSession)
+- [R.Swift](https://github.com/500beckwon/SwiftBasic/tree/master/RSwift)
+- [Error](https://github.com/500beckwon/SwiftBasic/tree/master/Errorl)
+- [Modal Presentation Style](https://github.com/500beckwon/SwiftBasic/tree/master/ModalPresentationStyle)
+
+<br>
+
+### TIL 
+- [TIL](https://github.com/500beckwon/SwiftBasic/tree/master/TIL)
+
+<br>
+
 
 ## 비고 
 - ~~공부가 작심삼일로 끝나도 다른 날에 다시 작심삼일하면 된다~~
