@@ -33,20 +33,21 @@ import Foundation
 
  1 <= temperatures.length <= 105
  30 <= temperatures[i] <= 100
+ func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
+     var stack = [Int]()
+     var result = (0..<temperatures.count).map { _ in 0 }
+     for (index, tem) in temperatures.enumerated() {
+         while let top = stack.last, temperatures[top] < tem {
+             result[top] = index - top
+             stack.removeLast()
+         }
+         stack.append(index)
+     }
+     
+     return result
+   }
+
  */
 
-func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
-    var stack = [Int]()
-    var result = (0..<temperatures.count).map { _ in 0 }
-    for (index, tem) in temperatures.enumerated() {
-        while let top = stack.last, temperatures[top] < tem {
-            result[top] = index - top
-            stack.removeLast()
-        }
-        stack.append(index)
-    }
-    
-    return result
-  }
 
  
