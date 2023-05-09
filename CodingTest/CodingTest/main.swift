@@ -230,8 +230,4 @@ print(twoSum(sample3, target3))
 
  */
 
-var  c = 19
-while c != 0 {
-    c -= 1
-    print(c)
-}
+print(numJewelsInStones("aA", "aAAAAAA"))
