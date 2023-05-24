@@ -230,4 +230,7 @@ print(twoSum(sample3, target3))
 
  */
 
-print(numJewelsInStones("aA", "aAAAAAA"))
+//print(numJewelsInStones("aA", "aAAAAAA"))
+
+print(lengthOfLongesSubstring("abcabcbb"))
+print(lengthOfLongesSubstring("bbbbb"))
