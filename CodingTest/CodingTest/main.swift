@@ -228,9 +228,12 @@ print(twoSum(sample3, target3))
  print(circularQueue.enQueue(6))
  print(circularQueue.enQueue(4))
 
+ print(lengthOfLongesSubstring("abcabcbb"))
+ print(lengthOfLongesSubstring("bbbbb"))
+ 
  */
 
 //print(numJewelsInStones("aA", "aAAAAAA"))
 
-print(lengthOfLongesSubstring("abcabcbb"))
-print(lengthOfLongesSubstring("bbbbb"))
+
+print(lengthOfLastWord("luffy is still joyboy"))
