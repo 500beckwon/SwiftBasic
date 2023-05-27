@@ -231,9 +231,12 @@ print(twoSum(sample3, target3))
  print(lengthOfLongesSubstring("abcabcbb"))
  print(lengthOfLongesSubstring("bbbbb"))
  
+ print(lengthOfLastWord("luffy is still joyboy"))
+ 
  */
 
 //print(numJewelsInStones("aA", "aAAAAAA"))
 
+//print(topKFrequent([1,2], 2))
 
-print(lengthOfLastWord("luffy is still joyboy"))
+print(topKFrequent([4,1,-1,2,-1,2,3], 2))
