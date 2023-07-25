@@ -243,6 +243,9 @@ print(twoSum(sample3, target3))
  let result = convert(text, 3)
 
  print(result, result == "PAHNAPLSIIGYIR")
+ 
+ print(plusOne([1,2,3]))
+ print(plusOne([9]))
  */
 
 //print(numJewelsInStones("aA", "aAAAAAA"))
@@ -252,5 +255,10 @@ print(twoSum(sample3, target3))
 //print(topKFrequent([4,1,-1,2,-1,2,3], 2))
 
 
-print(plusOne([1,2,3]))
-print(plusOne([9]))
+let a =
+"10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101"
+let b =
+"110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
+print(addBinary(a, b))
+
+
