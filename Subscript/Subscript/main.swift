@@ -7,7 +7,7 @@
 
 import Foundation
 
-let text = "Hell, World"
+let text = "Hello, World"
 
 
 extension String {
