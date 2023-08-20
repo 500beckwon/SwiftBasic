@@ -102,3 +102,67 @@ struct Queue2<T> {
    }
    
 }
+
+class Node<T> {
+   var value: T
+   var next: Node?
+   
+   init(value: T, next: Node?) {
+      self.value = value
+      self.next = next
+   }
+}
+
+struct Queue3<T> {
+   var front: Node<T>?
+   
+   var rear: Node<T>?
+   
+   init() {
+      
+   }
+        
+    /// 큐가 비어있는지를 체크하기 위한 연산 프로퍼티
+    var isEmpty: Bool {
+        return front == nil
+    }
+    
+   var peek: T? {
+      return front?.value
+   }
+   
+   mutating func push(_ value: T) {
+      front = Node(value: value, next: front)
+      if rear == nil {
+         rear = front
+      }
+   }
+   
+   mutating func enqueue(_ value: T) {
+      if isEmpty {
+         push(value)
+         return
+      }
+      
+      rear = rear?.next
+   }
+   
+   mutating func dequeue() -> T? {
+      defer {
+         front = front?.next
+         if isEmpty {
+            rear = nil
+         }
+      }
+      
+      return front?.value
+      
+   }
+}
+
+extension Node: CustomStringConvertible {
+   var description: String {
+      guard let next = next else { return "\(value)" }
+      return "\(value) -> \(String(describing: next))"
+   }
+}

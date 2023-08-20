@@ -24,6 +24,7 @@ var stringSliceArray1 = stringArray[2...3]
 var stringSliceArray2 = stringArray[0...3]
 var stringSliceArray3 = stringArray[5...]
 var stringSliceArray4 = stringArray[..<stringArray.count]
+
 print(stringSliceArray1, stringSliceArray2, stringSliceArray3, stringSliceArray4, separator: "\n")
 
 let scoreArray = [3.5, 4.0, 2.0, 4.5, 3.2, 4.3]

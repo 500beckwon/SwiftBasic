@@ -11,7 +11,7 @@ struct APIExample {
     func nestedClosureWork() {
         var arr = [String]()
         let startTime = Date()
-        callApiA { responseFromA in
+        callApiA {  responseFromA in
             callApiB { responseFromB in
                 callApiC { responseFromC in
                     arr.append(responseFromA)
