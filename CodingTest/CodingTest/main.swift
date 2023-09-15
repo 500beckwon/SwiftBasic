@@ -253,6 +253,11 @@ print(twoSum(sample3, target3))
  "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011"
  print(addBinary(a, b))
 
+ print(mySqrt(4), "a")
+ print(mySqrt(8), "b")
+ print(mySqrt(3), "d")
+ print(mySqrt(1), "c")
+ 
  */
 
 //print(numJewelsInStones("aA", "aAAAAAA"))
@@ -261,7 +266,5 @@ print(twoSum(sample3, target3))
 
 //print(topKFrequent([4,1,-1,2,-1,2,3], 2))
 
-print(mySqrt(4), "a")
-print(mySqrt(8), "b")
-print(mySqrt(3), "d")
-print(mySqrt(1), "c")
+print(findMedianSortedArrays([1,3], [2]))
+print(findMedianSortedArrays([1,2], [3,4]))
