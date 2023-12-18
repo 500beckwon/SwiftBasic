@@ -257,7 +257,8 @@ print(twoSum(sample3, target3))
  print(mySqrt(8), "b")
  print(mySqrt(3), "d")
  print(mySqrt(1), "c")
- 
+ print(findMedianSortedArrays([1,3], [2]))
+ print(findMedianSortedArrays([1,2], [3,4]))
  */
 
 //print(numJewelsInStones("aA", "aAAAAAA"))
@@ -266,5 +267,8 @@ print(twoSum(sample3, target3))
 
 //print(topKFrequent([4,1,-1,2,-1,2,3], 2))
 
-print(findMedianSortedArrays([1,3], [2]))
-print(findMedianSortedArrays([1,2], [3,4]))
+
+print(isMatch("aa", "a"))
+print(isMatch("aa", "a*"))
+print(isMatch("ab", ".*"))
+print(isMatch("aab", "c*a*b"))
