@@ -15,7 +15,7 @@ struct WeatherDayView:  View {
     var body: some View {
         VStack {
             Text(dayOfWeek)
-                .font(.system(size: 20, weight: .medium, design: .default))
+                .font(.system(size: 20, weight: .bold, design: .default))
                 .foregroundStyle(.white)
                 .padding()
             
