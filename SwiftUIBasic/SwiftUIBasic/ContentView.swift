@@ -68,6 +68,18 @@ struct ContentView: View {
                 
                 Spacer()
             }
+            .onAppear {
+                print("무야호")
+                let button = WeatherButton(
+                    title: "Change Day Time",
+                    textColor: .blue,
+                    backGroundColor: .white
+                )
+                
+                print(type(of: button.body))
+                
+                //ModifiedContent<ModifiedContent<mode_t>>>
+            }
         }
     }
 }
